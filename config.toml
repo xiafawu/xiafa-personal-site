@@ -1,0 +1,53 @@
+# Site Settings
+title = "Xiafa Wu"
+description = "Personal website - Introduction and research"
+base_url = "https://xiafawu.github.io/xiafa-personal-site" 
+default_language = "en"
+
+[extra]
+# Navigation logo (usually initials)
+logo = "XW"
+
+# Author Information
+[extra.author]
+name = "Xiafa Wu"
+email = "xiafaw@uci.edu"
+github = "xiafawu"
+twitter = ""
+linkedin = "xiafawu"
+
+# Site navigation
+[[extra.navigation]]
+name = "Home"
+url = "#home"
+
+[[extra.navigation]]
+name = "About"
+url = "#about"
+
+[[extra.navigation]]
+name = "Research"
+url = "#research"
+
+[[extra.navigation]]
+name = "Contact"
+url = "#contact"
+
+# Social links
+[extra.social]
+email = "xiafaw@uci.edu"
+github = "https://github.com/xiafawu"
+twitter = ""
+linkedin = "https://www.linkedin.com/in/xiafawu"
+instagram = "https://www.instagram.com/xiafawu/"
+
+# Hero section
+[extra.hero]
+greeting = "Hi,"
+name = ""
+subtitle = "I'm Xiafa (Freya) Wu, a fifth-year PhD student in Computer Science at UC Irvine, currently based in Irvine, California. I love designing software and spend most of my time working on C-to-Rust translation tooling and exploring compiler infrastructure like LLVM and MLIR. Outside of research, I'm usually driving around SoCal, hopping between cafes, discovering new music and concerts, or hanging out with my cat."
+
+# Footer
+[extra.footer]
+text = "Built with simplicity in mind."
+repo_url = "https://github.com/yourusername/xiafa-personal-site"

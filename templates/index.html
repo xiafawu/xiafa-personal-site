@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="layout">
+        <div class="main-content">
+            <section class="hero">
+                <h1 class="hero-title">
+                    <span class="greeting">{{ config.extra.hero.greeting }}</span>
+                    {% if config.extra.hero.name %}
+                    <span class="name">{{ config.extra.hero.name }}</span>
+                    {% endif %}
+                </h1>
+                {% if config.extra.hero.subtitle %}
+                <p class="hero-subtitle">{{ config.extra.hero.subtitle }}</p>
+                {% endif %}
+            </section>
+
+            {{ section.content | safe }}
+        </div>
+
+        <aside class="sidebar">
+            <section class="section">
+                <div class="sidebar-info">
+                    <p class="sidebar-name-full">Freya (Xiafa) Wu · she/her</p>
+                    <p class="sidebar-title">PhD Candidate, Computer Science</p>
+                    <p class="sidebar-institution">University of California, Irvine</p>
+                </div>
+                <ul class="contact-links">
+                    {% if config.extra.social.email %}
+                    <li><a href="mailto:{{ config.extra.social.email }}" target="_blank" rel="noopener noreferrer">Email {{ config.extra.social.email }}</a></li>
+                    {% endif %}
+                    {% if config.extra.social.github %}
+                    {% set github_handle = config.extra.social.github | replace(from="https://github.com/", to="") | replace(from="http://github.com/", to="") | trim_end_matches(pat="/") %}
+                    <li><a href="{{ config.extra.social.github }}" target="_blank" rel="noopener noreferrer">GitHub /{{ github_handle }}</a></li>
+                    {% endif %}
+                    {% if config.extra.social.twitter %}
+                    {% set twitter_handle = config.extra.social.twitter | replace(from="https://twitter.com/", to="") | replace(from="http://twitter.com/", to="") | replace(from="https://x.com/", to="") | replace(from="http://x.com/", to="") | trim_end_matches(pat="/") %}
+                    <li><a href="{{ config.extra.social.twitter }}" target="_blank" rel="noopener noreferrer">Twitter @{{ twitter_handle }}</a></li>
+                    {% endif %}
+                    {% if config.extra.social.linkedin %}
+                    {% set linkedin_handle = config.extra.social.linkedin | replace(from="https://www.linkedin.com/in/", to="") | replace(from="http://www.linkedin.com/in/", to="") | replace(from="https://linkedin.com/in/", to="") | replace(from="http://linkedin.com/in/", to="") | trim_end_matches(pat="/") %}
+                    <li><a href="{{ config.extra.social.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn /{{ linkedin_handle }}</a></li>
+                    {% endif %}
+                    {% if config.extra.social.instagram %}
+                    {% set instagram_handle = config.extra.social.instagram | replace(from="https://www.instagram.com/", to="") | replace(from="http://www.instagram.com/", to="") | replace(from="https://instagram.com/", to="") | replace(from="http://instagram.com/", to="") | trim_end_matches(pat="/") %}
+                    <li><a href="{{ config.extra.social.instagram }}" target="_blank" rel="noopener noreferrer">Instagram @{{ instagram_handle }}</a></li>
+                    {% endif %}
+                </ul>
+            </section>
+        </aside>
+    </div>
+</div>
+{% endblock %}

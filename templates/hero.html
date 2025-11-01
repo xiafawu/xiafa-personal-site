@@ -1,0 +1,9 @@
+<section class="hero">
+    <h1 class="hero-title">
+        <span class="greeting">{{ config.extra.hero.greeting }}</span>
+        <span class="name">{{ config.extra.hero.name }}</span>
+    </h1>
+    {% if config.extra.hero.subtitle %}
+    <p class="hero-subtitle">{{ config.extra.hero.subtitle }}</p>
+    {% endif %}
+</section>

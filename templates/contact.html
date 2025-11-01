@@ -1,0 +1,17 @@
+<section class="section">
+    <h2 class="section-title">Contact</h2>
+    <ul class="contact-links">
+        {% if config.extra.social.email %}
+        <li><a href="mailto:{{ config.extra.social.email }}" target="_blank" rel="noopener noreferrer">Email</a></li>
+        {% endif %}
+        {% if config.extra.social.github %}
+        <li><a href="{{ config.extra.social.github }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        {% endif %}
+        {% if config.extra.social.twitter %}
+        <li><a href="{{ config.extra.social.twitter }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        {% endif %}
+        {% if config.extra.social.linkedin %}
+        <li><a href="{{ config.extra.social.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        {% endif %}
+    </ul>
+</section>

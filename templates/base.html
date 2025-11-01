@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page.description | default(value=config.description) }}">
+    <title>{{ page.title | default(value=config.title) }}</title>
+    <link rel="stylesheet" href="{{ get_url(path='css/styles.css') }}">
+</head>
+<body>
+    <script>
+        // Apply random vibrant theme immediately on page load
+        (function() {
+            const themes = ['blue', 'purple', 'green', 'orange', 'pink', 'teal', 'red', 'yellow', 'indigo', 'cyan', 'rose', 'emerald', 'violet'];
+            const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+            document.documentElement.setAttribute('data-theme', randomTheme);
+            document.body.className = `theme-${randomTheme}`;
+            console.log('Applied theme:', randomTheme);
+        })();
+    </script>
+    {% block content %}{% endblock %}
+    
+    <script src="{{ get_url(path='js/script.js') }}"></script>
+</body>
+</html>
