@@ -1,7 +1,7 @@
 # Site Settings
 title = "Xiafa Wu"
 description = "Personal website - Introduction and research"
-base_url = "https://xiafawu.github.io/xiafa-personal-site" 
+base_url = "https://xiafawu.github.io/xiafa-personal-site"
 default_language = "en"
 
 [extra]
