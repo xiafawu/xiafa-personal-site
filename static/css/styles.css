@@ -1,4 +1,4 @@
-/* rsms.me style - simple, clean formatting */
+/* Inter for body */
 @import url('https://rsms.me/inter/inter.css');
 
 :root {
@@ -340,12 +340,13 @@ body {
 .greeting {
     display: block;
     font-size: 3.25rem;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 0.75rem;
     color: var(--color-link);
     transition: color 0.5s ease, opacity 0.3s ease;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     opacity: 1;
+    font-family: var(--font-body);
     @supports (color: color(display-p3 0 0 0)) {
         color: var(--color-link-p3);
     }
