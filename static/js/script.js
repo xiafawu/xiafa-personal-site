@@ -6,20 +6,25 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.opacity = '1';
     }, 10);
     
-    // Animated greeting swap with multiple languages
+    // Animated greeting swap with multiple languages (top 15 most spoken)
     const greetingElement = document.querySelector('.greeting');
     if (greetingElement) {
         const greetings = [
-            'Hi,',           // English
-            '你好，',         // Chinese
-            'Hej,',          // Danish
-            'Hallo,',        // German
-            '안녕,',          // Korean
-            'こんにちは，',    // Japanese
-            'नमस्ते,',        // Hindi
-            'Hola,',         // Spanish
-            'Bonjour,',      // French
-            'Ciao,',         // Italian
+            'Hi,',           // 1. English
+            '你好，',         // 2. Mandarin Chinese
+            'नमस्ते,',        // 3. Hindi
+            'Hola,',         // 4. Spanish
+            'Bonjour,',      // 5. French
+            'مرحبا،',        // 6. Arabic
+            'হ্যালো,',       // 7. Bengali
+            'Olá,',          // 8. Portuguese
+            'Привет,',       // 9. Russian
+            'ہیلو،',         // 10. Urdu
+            'Halo,',         // 11. Indonesian
+            'Hallo,',        // 12. German
+            'こんにちは，',    // 13. Japanese
+            'Hujambo,',      // 14. Swahili
+            'Merhaba,',      // 15. Turkish
         ];
         let currentIndex = 0;
         
@@ -32,14 +37,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 const langMap = {
                     'Hi,': 'en',
                     '你好，': 'zh',
-                    'Hej,': 'da',
-                    'Hallo,': 'de',
-                    '안녕,': 'ko',
-                    'こんにちは，': 'ja',
                     'नमस्ते,': 'hi',
                     'Hola,': 'es',
                     'Bonjour,': 'fr',
-                    'Ciao,': 'it'
+                    'مرحبا،': 'ar',
+                    'হ্যালো,': 'bn',
+                    'Olá,': 'pt',
+                    'Привет,': 'ru',
+                    'ہیلو،': 'ur',
+                    'Halo,': 'id',
+                    'Hallo,': 'de',
+                    'こんにちは，': 'ja',
+                    'Hujambo,': 'sw',
+                    'Merhaba,': 'tr'
                 };
                 greetingElement.setAttribute('lang', langMap[greetings[currentIndex]] || 'en');
                 greetingElement.style.opacity = '1';
