@@ -45,7 +45,7 @@ instagram = "https://www.instagram.com/xiafawu/"
 [extra.hero]
 greeting = "Hi,"
 name = ""
-subtitle = "I'm Xiafa (Freya) Wu, a fifth-year PhD student in Computer Science at UC Irvine, currently based in Irvine, California. I love designing software and spend most of my time working on C-to-Rust translation tooling and exploring compiler infrastructure like LLVM and MLIR. Outside of research, I'm usually driving around SoCal, hopping between cafes, discovering new music and concerts, or hanging out with my cat."
+subtitle = "I'm Freya (Xiafa) Wu, a fifth-year PhD student in Computer Science at UC Irvine, currently based in Irvine, California. I love designing software and spend most of my time working on C-to-Rust translation tooling and exploring compiler infrastructure like LLVM and MLIR. Outside of research, I'm usually driving around SoCal, hopping between cafes, discovering new music and concerts, or hanging out with my cat."
 
 # Footer
 [extra.footer]
