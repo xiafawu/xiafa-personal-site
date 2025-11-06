@@ -12,12 +12,18 @@
 </head>
 <body>
     <script>
-        // Apply random vibrant theme immediately on page load
+        // Apply random vibrant theme immediately on page load (always different from previous)
         (function() {
             const themes = ['blue', 'purple', 'green', 'orange', 'pink', 'teal', 'red', 'yellow', 'indigo', 'cyan', 'rose', 'emerald', 'violet'];
-            const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+            const lastTheme = localStorage.getItem('lastTheme');
+            
+            // Filter out the last theme to ensure we get a different one
+            const availableThemes = lastTheme ? themes.filter(t => t !== lastTheme) : themes;
+            const randomTheme = availableThemes[Math.floor(Math.random() * availableThemes.length)];
+            
             document.documentElement.setAttribute('data-theme', randomTheme);
             document.body.className = `theme-${randomTheme}`;
+            localStorage.setItem('lastTheme', randomTheme);
             console.log('Applied theme:', randomTheme);
         })();
     </script>
