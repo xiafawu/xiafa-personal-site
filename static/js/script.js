@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
             '你好，',         // Chinese
             'Hej,',          // Danish
             'Hallo,',        // German
-            '안녕하세요,',     // Korean
-            'こんにちは,',     // Japanese
+            '안녕,',          // Korean
+            'こんにちは，',    // Japanese
             'नमस्ते,',        // Hindi
             'Hola,',         // Spanish
             'Bonjour,',      // French
-            'Ciao,'          // Italian
+            'Ciao,',         // Italian
         ];
         let currentIndex = 0;
         
@@ -28,12 +28,29 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 currentIndex = (currentIndex + 1) % greetings.length;
                 greetingElement.textContent = greetings[currentIndex];
+                // Set lang attribute for proper font selection
+                const langMap = {
+                    'Hi,': 'en',
+                    '你好，': 'zh',
+                    'Hej,': 'da',
+                    'Hallo,': 'de',
+                    '안녕,': 'ko',
+                    'こんにちは，': 'ja',
+                    'नमस्ते,': 'hi',
+                    'Hola,': 'es',
+                    'Bonjour,': 'fr',
+                    'Ciao,': 'it'
+                };
+                greetingElement.setAttribute('lang', langMap[greetings[currentIndex]] || 'en');
                 greetingElement.style.opacity = '1';
             }, 300);
         };
         
-        // Start swapping every 6 seconds
-        setInterval(swapGreeting, 6000);
+        // Set initial lang attribute
+        greetingElement.setAttribute('lang', 'en');
+        
+        // Start swapping every 3.5 seconds
+        setInterval(swapGreeting, 3500);
     }
     
     // Animated shape morphing with smooth transitions
