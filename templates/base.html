@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ page.description | default(value=config.description) }}">
     <title>{{ page.title | default(value=config.title) }}</title>
+    <link rel="icon" type="image/svg+xml" href="{{ get_url(path='favicon.svg') }}">
+    <link rel="apple-touch-icon" href="{{ get_url(path='favicon.svg') }}">
+    <link rel="mask-icon" href="{{ get_url(path='favicon.svg') }}" color="#ff6b9d">
     <link rel="stylesheet" href="{{ get_url(path='css/styles.css') }}">
 </head>
 <body>

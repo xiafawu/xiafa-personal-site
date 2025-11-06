@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <!-- Circle mask for clipping the stripes -->
+    <clipPath id="circleMask">
+      <circle cx="16" cy="16" r="13"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Transparent background (no background fill) -->
+  
+  <!-- Group with circle mask applied -->
+  <g clip-path="url(#circleMask)">
+    <!-- Eight diagonal stripes with distinct warm colors, red in center -->
+    <rect x="-12" y="0" width="6" height="60" fill="#d97706" transform="rotate(45 16 16)"/>
+    <rect x="-6" y="0" width="6" height="60" fill="#f59e0b" transform="rotate(45 16 16)"/>
+    <rect x="0" y="0" width="6" height="60" fill="#fbbf24" transform="rotate(45 16 16)"/>
+    <rect x="6" y="0" width="6" height="60" fill="#fde68a" transform="rotate(45 16 16)"/>
+    <rect x="12" y="0" width="6" height="60" fill="#dc2626" transform="rotate(45 16 16)"/>
+    <rect x="18" y="0" width="6" height="60" fill="#ff69b4" transform="rotate(45 16 16)"/>
+    <rect x="24" y="0" width="6" height="60" fill="#d946ef" transform="rotate(45 16 16)"/>
+    <rect x="30" y="0" width="6" height="60" fill="#fca5a5" transform="rotate(45 16 16)"/>
+  </g>
+</svg>
