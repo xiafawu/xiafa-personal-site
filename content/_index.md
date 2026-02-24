@@ -4,8 +4,8 @@ description = "Personal website - Introduction and research"
 template = "index.html"
 +++
 
-<section class="section" id="work">
-    <h2 class="section-title">Work</h2>
+<section class="section" id="research">
+    <h2 class="section-title">Research</h2>
     <ul class="projects-list">
         <li class="project-item">
             <div class="project-header">
@@ -19,18 +19,36 @@ template = "index.html"
         </li>
         <li class="project-item">
             <div class="project-header">
-                <h3 class="project-title">AI Compiler Intern <span class="project-year">2025</span></h3>
-            </div>
-            <p class="project-description">Black Sesame Technologies. MLIR-based operator profiling system for compiler transformations.</p>
-        </li>
-        <li class="project-item">
-            <div class="project-header">
                 <h3 class="project-title">
                     <a href="https://arxiv.org/abs/2112.09725">scenoRITA</a>
                 </h3>
                 <span class="project-year">2021</span>
             </div>
             <p class="project-description">Generating Less-Redundant, Safety-Critical and Motion Sickness-Inducing Scenarios for Autonomous Vehicles.</p>
+        </li>
+    </ul>
+</section>
+
+<section class="section" id="work">
+    <h2 class="section-title">Work</h2>
+    <ul class="projects-list">
+        <li class="project-item">
+            <div class="project-header">
+                <h3 class="project-title">AI Compiler Intern <span class="project-year">2025</span></h3>
+            </div>
+            <p class="project-description">Black Sesame Technologies. MLIR-based operator profiling system for compiler transformations.</p>
+        </li>
+    </ul>
+</section>
+
+<section class="section" id="service">
+    <h2 class="section-title">Service</h2>
+    <ul class="projects-list">
+        <li class="project-item">
+            <div class="project-header">
+                <h3 class="project-title">Review Committee <span class="project-year">2025</span></h3>
+            </div>
+            <p class="project-description">ACM Transactions on Software Engineering and Methodology (TOSEM)</p>
         </li>
     </ul>
 </section>

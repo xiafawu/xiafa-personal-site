@@ -317,10 +317,11 @@ body {
 }
 
 .sidebar {
-    position: relative;
+    position: sticky;
     min-width: 0;
     order: 2;
     align-self: start;
+    top: 4rem;
     padding-top: calc(3.25rem + 0.75rem + 1.5rem);
 }
 
